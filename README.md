@@ -8,8 +8,10 @@ Functions included are:
 - Matrix addition & subtration
 - Matrix transpose
 - Matrix trace
+- Matrix rotation
+- Gauss Jordan Elimination Method
+- Row Operations
 
-The goal of this distribution is to form an all in one matrix arithmetic program.
-Next to encorperate is user entering matrices to be used and also the Jordan-Gauss Elimination method.
+Next: Impliment Matrix Determinents and ability to enter matrices into terminal.
 
 CODE IS UNFINISHED!
