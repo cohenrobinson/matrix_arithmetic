@@ -12,6 +12,7 @@ void m_add(int dimension, double matrix_a[dimension][dimension], double matrix_b
 void m_subtr(int dimension, double matrix_a[dimension][dimension], double matrix_b[dimension][dimension]);
 void m_transpose(int dimension, double matrix[dimension][dimension]);
 double m_trace(int dimension, double matrix[dimension][dimension]);
+void m_rotate(double matrix[3][3], double angle_a, double angle_b, double angle_c);
 
 void m_display(int dimension, double matrix[dimension][dimension]);
 void v_display(int length, double vector[length]);
@@ -64,6 +65,21 @@ int main()
   printf("\nThe vector-matrix product of vector_a and matrix_b is :\n");
   mv_prod(2, vector_a, matrix_b);
   v_display(2, vector_a);
+
+  // rotating matrix_c by angles a, b and c
+  double angle_a = 65;
+  double angle_b = 32;
+  double angle_c = 0;
+  double matrix_c[3][3] = {
+                          {1, 2, 3},
+                          {4, 5, 6},
+                          {7, 8, 9}
+                          };
+  printf("\nmatrix_c is : \n");
+  m_display(3, matrix_c);
+  printf("rotating matrix_c by angles a = %.2f, b = %.2f, c = %.2f gives :", angle_a, angle_b, angle_c);
+  m_rotate(matrix_c, angle_a, angle_b, angle_c);
+  m_display(3, matrix_c);
 
 
   return 0;
@@ -193,7 +209,7 @@ void v_display(int length, double vector[length])
 }
 
 // performs various rotations on a given matrix
-void m_rotate(int dimension, double matrix[dimension][dimension], double angle_a, double angle_b, double angle_c)
+void m_rotate(double matrix[3][3], double angle_a, double angle_b, double angle_c)
 {
   double rotate_a[3][3] = {
                           {1, 0, 0},
