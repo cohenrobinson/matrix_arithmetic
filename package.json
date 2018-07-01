@@ -1,0 +1,20 @@
+{
+  "name": "matrix_arithmetic",
+  "version": "1.0.0",
+  "description": "General arithmetic functions associated with matrices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cohenrobinson/matrix_arithmetic.git"
+  },
+  "keywords": ["matrices", "matrix", "determinents", "row-reduction", "arithmetic", "vector"],
+  "author": "Cohen Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cohenrobinson/matrix_arithmetic/issues"
+  },
+  "homepage": "https://github.com/cohenrobinson/matrix_arithmetic#readme"
+}
